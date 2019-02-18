@@ -16,5 +16,9 @@ router.get('/', function (req, res, next) {
     date: new Date
   });
 });
-
+router.get('/1', function (req, res, next) {
+  res.json({
+    path: '1'
+  })
+})
 module.exports = router;
